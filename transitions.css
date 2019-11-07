@@ -33,6 +33,12 @@ main {
   overflow: hidden;
   background-color: hsl(220deg, 30%, 80%);
 }
+.card:hover{
+  transform: rotate(360deg) scale(1.1);  
+  border-radius: 25px;  
+
+}
+
 
 .name {
   font-size: 1rem;
@@ -40,6 +46,18 @@ main {
   background-color: hsl(220deg, 50%, 60%);
   color: hsl(220deg, 0%, 95%);
   text-align: center;
+  transition: letter-spacing 0.9s;
+}
+
+.name:hover{
+  position: relative;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  background-color:rgb(231, 110, 110);
+  color:black;
+  box-shadow: 2px 2px 1px black;
+  
 }
 
 .avatar {
@@ -50,17 +68,41 @@ main {
 .avatar img {
   border: 0.25rem solid hsl(80deg, 50%, 70%);
   border-radius: 50%;
+  transform: rotate(360deg) scale(1.1);  
+  border-radius: 25px;  
 }
 
 .contact {
   font-size: 0.6rem;
   padding: 0.5rem 1rem;
   color: hsl(220deg, 30%, 50%);
+  transition: all 1.3s;
+  
 }
 
-.email {}
+.contact:hover {
 
-.cell {}
+  position: relative;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  background-color:white;
+  color:black;
+  box-shadow: 2px 2px 1px black;
+  
+}
+
+.email {
+  transition: all 1.3s 0.5s;
+  translate: transform(-1rem, 1rem) scale(1.2, 1.2) rotate(-15deg);
+  transform: scale(1.2);
+}
+
+.cell {
+ transition: all 1.3s 1s;
+ transform: scale(1.2);
+
+}
 
 .avatars {
   display: flex;
@@ -69,7 +111,9 @@ main {
   align-items: center;
   background-color: hsl(80deg, 20%, 90%);
   padding: 0.5rem;
+  
 }
+
 
 .icon-wrapper {
   display: inline-block;
@@ -78,4 +122,8 @@ main {
   width: 30px;
   height: 30px;
   line-height: 30px;
+}
+.icon-wrapper:hover {
+  transform: rotate(360deg) scale(1.3);  
+  border-radius: 25px;  
 }
