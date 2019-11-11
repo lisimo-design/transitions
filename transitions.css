@@ -32,6 +32,7 @@ main {
   position: relative;
   overflow: hidden;
   background-color: hsl(220deg, 30%, 80%);
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 .card:hover{
   transform: rotate(360deg) scale(1.1);  
